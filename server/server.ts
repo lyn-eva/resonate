@@ -20,11 +20,6 @@ io.on('connection', (socket) => {
 	socket.on('new_message', (msg) => {
 		socket.broadcast.emit(msg.roomId, msg)
 	})
-
-	// socket.on('testing', (msg) => {
-	// 	console.log('server message: ', msg)
-	// 	socket.broadcast.emit('testing', msg)
-	// })
 })
 
 io.on('new_namespace', (namespace) => {

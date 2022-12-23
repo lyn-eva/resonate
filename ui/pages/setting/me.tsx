@@ -1,6 +1,6 @@
+import { User } from '@/Types'
 import { FormEvent, useState } from 'react'
 import { useQuery, useQueryClient } from 'react-query'
-import { User } from '../../components/chat/LeftSidebar'
 import { useBearStore } from '../../components/hooks'
 
 const fetchConnections = () => fetch('http://localhost:5000/user/id/connections').then((res) => res.json())

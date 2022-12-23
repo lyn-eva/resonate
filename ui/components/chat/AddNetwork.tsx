@@ -1,7 +1,6 @@
 import { FormEvent, useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from 'react-query'
-import { useBearStore } from '../hooks'
-import { User } from './LeftSidebar'
+import type { User } from '@/Types'
 
 const addRoomFn = (body: { userIds: string[] }) =>
 	fetch('http://localhost:5000/room/create', {

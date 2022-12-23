@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useQuery } from 'react-query'
 import { Message } from './ChatRoom'
-import { User } from './LeftSidebar'
+import { User } from '../LeftSidebar'
 
 export default function Conversations({ conversations: h }: Props) {
 	const { data: user } = useQuery<User>('user')

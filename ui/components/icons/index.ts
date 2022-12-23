@@ -1,5 +1,8 @@
-export { default as AddContactIcon } from './AddContactIcon';
-export { default as ChatBubbleIcon } from './ChatBubbleIcon';
-export { default as CrossIcon } from './CrossIcon';
-export { default as EmojiIcon } from './EmojiIcon';
-export { default as SendIcon } from './SendIcon';
+export { default as AddContactIcon } from './AddContactIcon'
+export { default as ChatBubbleIcon } from './ChatBubbleIcon'
+export { default as CrossIcon } from './CrossIcon'
+export { default as EmojiIcon } from './EmojiIcon'
+export { default as ProfileIcon } from './ProfileIcon'
+export { default as SendIcon } from './SendIcon'
+export { default as SignOutIcon } from './SignOutIcon'
+export { default as GoogleIcon } from './GoogleIcon'

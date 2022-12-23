@@ -2,57 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-*:not(
-    svg,
-    button,
-    textarea,
-    input,
-    header,
-    footer,
-    span,
-    form,
-    img,
-    ul,
-    li,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    a
-  ) {
-  height: 100%;
+*:not(svg, button, textarea, input, header, footer, span, form, img, ul, li, h1, h2, h3, h4, h5, h6, p, a) {
+	height: 100%;
 }
 
 @layer components {
-  .btn {
-    @apply h-auto rounded-md duration-300 hover:bg-slate-100 active:scale-95 active:bg-slate-300 [&_svg]:text-white [&_svg]:hover:text-indigo-900;
-  }
-  .flex-y {
-    @apply flex flex-col;
-  }
-  .divider-x {
-    @apply h-[1px] bg-gray-300;
-  }
-  .flex-c {
-    @apply flex items-center;
-  }
-  .center {
-    @apply grid place-items-center content-center;
-  }
+	.btn {
+		@apply h-auto rounded-md duration-300 hover:bg-slate-100 active:scale-95 active:bg-slate-300 [&_svg]:text-white [&_svg]:hover:text-indigo-900;
+	}
+	.flex-y {
+		@apply flex flex-col;
+	}
+	.divider-x {
+		@apply h-[1px] grow bg-gray-300;
+	}
+	.flex-c {
+		@apply flex items-center;
+	}
+	.center {
+		@apply grid place-items-center content-center;
+	}
+	.input {
+		@apply w-full border-[2px] bg-transparent px-2 py-[2px] text-cyan-900 outline-none focus:border-cyan-600;
+	}
+	.btn-primary {
+		@apply rounded-sm bg-cyan-600 py-[3px] text-center text-white duration-300 hover:bg-cyan-700 active:scale-95;
+	}
+	.btn-outline {
+		@apply rounded-sm border-2 py-[3px] text-center text-cyan-900 duration-300 hover:bg-cyan-700 active:scale-95;
+	}
 }
 
 *::-webkit-scrollbar {
-  appearance: none;
-  width: 7px;
+	appearance: none;
+	width: 7px;
 }
 *::-webkit-scrollbar-track {
 }
 *::-webkit-scrollbar-thumb {
-  background-color: gray; /* color of the scroll thumb */
-  border-radius: 5px; /* roundness of the scroll thumb */
+	background-color: gray; /* color of the scroll thumb */
+	border-radius: 5px; /* roundness of the scroll thumb */
 }
 
 /* used colors */

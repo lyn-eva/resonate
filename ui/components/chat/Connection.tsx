@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useSocket } from '../hooks'
-import { Room } from './LeftSidebar'
+import { useSocket } from '@/components/hooks'
+import type { Room } from '@/Types'
 
 export default function Connection({ id, roomId }: Props) {
 	const { socket } = useSocket(roomId)
